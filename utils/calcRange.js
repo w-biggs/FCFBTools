@@ -15,26 +15,11 @@ const getSeasonWeekElos = function getAllTeamElosGivenSeasonAndWeek(elo, seasonN
   return elos.filter(teamElo => teamElo);
 };
 
-module.exports = function calculateSeasonRanges(elo, seasonNo) {
-  const ranges = [];
-  
-  /* Number of games found for a week */
-  let weekNo = 0;
-  let gameCount = 0;
-  
-  do {
-    const elos = getSeasonWeekElos(elo, seasonNo, weekNo);
+module.exports = function calculateRange(elo, seasonNo, weekNo) {
+  const elos = getSeasonWeekElos(elo, seasonNo, weekNo);
 
-    if (elos.length > 0) {
-      const minElo = elos.reduce((a, b) => Math.min(a, b));
-      const maxElo = elos.reduce((a, b) => Math.max(a, b));
+  const minElo = elos.reduce((a, b) => Math.min(a, b));
+  const maxElo = elos.reduce((a, b) => Math.max(a, b));
 
-      ranges.push([minElo, maxElo]);
-    }
-
-    gameCount = elos.length;
-    weekNo += 1; // iterate week
-  } while (gameCount !== 0);
-
-  return ranges;
+  return [minElo, maxElo];
 };
