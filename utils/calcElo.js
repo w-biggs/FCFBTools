@@ -71,17 +71,17 @@ module.exports = function calcElo(game) {
   const awayElo = getElo(game.away.name);
 
   let winnerEloDiff = 0;
-  let homeResult = 0;
-  let awayResult = 0;
+  let homeResult = 'tie';
+  let awayResult = 'tie';
 
   if (homeScore > awayScore) {
     winnerEloDiff = homeElo - awayElo;
-    homeResult = 1;
-    awayResult = -1;
+    homeResult = 'win';
+    awayResult = 'loss';
   } else if (awayScore > homeScore) {
     winnerEloDiff = awayElo - homeElo;
-    homeResult = -1;
-    awayResult = 1;
+    homeResult = 'loss';
+    awayResult = 'win';
   }
 
   const homeWinProb = calcWinProb(homeScore, awayScore, homeElo, awayElo, mins);
