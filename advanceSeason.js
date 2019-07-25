@@ -5,6 +5,7 @@
 const fs = require('fs');
 const oldElo = require('./elo.json');
 const calcRange = require('./utils/calcRange');
+const writeJson = require('./utils/writeJson');
 
 const regressElo = function regressTeamElo(elo) {
   return elo + ((1500 - elo) / 3);
@@ -64,10 +65,4 @@ const advance = function advanceSeason(elo) {
 
 const newElo = advance(oldElo);
 
-fs.writeFile('elo2.json', JSON.stringify(newElo, null, 2), (err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('elo2.json has successfully been written.');
-  }
-});
+writeJson(newElo, 'elo2.json');
