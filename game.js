@@ -1,5 +1,5 @@
 const readline = require('readline');
-const fetchJson = require('./utils/fetchJson');
+const { fetchJson } = require('./utils/fetchJson');
 const parseGame = require('./utils/parseGame');
 const calcElo = require('./utils/calcElo');
 const writeElo = require('./utils/writeElo');

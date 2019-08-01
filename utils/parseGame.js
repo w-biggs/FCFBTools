@@ -6,13 +6,20 @@ module.exports = function parseGame(rawJson) {
   /* Get selftext from post json */
   const { data } = rawJson.data.children[0];
 
+  /* Complete games only */
+  if (!data.selftext.includes('Game complete')) {
+    return false;
+  }
+
   /* json for the parsed game */
   const gameJson = {
+    week: 1,
+    id: data.id,
+    gameLength: 0,
+    startTime_utc: data.created_utc,
+    endTime_utc: data.edited,
     away: {},
     home: {},
-    id: data.id,
-    date_utc: data.created_utc,
-    scrimmage: data.title.includes('Scrimmage'),
   };
 
   const regex = /\*\*(.*?)\*\* @ .*?\*\*(.*?)\*\*[\s\S]*?:-:\n(.*?) yards\|(.*?) yards\|(.*?) yards\|(.*?)\|(.*?)\|(.*?)\/(.*?)\|(.*?)\|(.*?)\n[\s\S]*?:-:\n(.*?) yards\|(.*?) yards\|(.*?)yards\|(.*?)\|(.*?)\|(.*?)\/(.*?)\|(.*?)\|(.*?)\n[\s\S]*?:-:\n.*?\|(.*?)\|(.*?)\|(.*?)\|(.*?)\|\*\*(.*?)\*\*\n.*?\|(.*?)\|(.*?)\|(.*?)\|(.*?)\|\*\*(.*?)\*\*\n/gm;
@@ -59,11 +66,19 @@ module.exports = function parseGame(rawJson) {
     const homePoss = gameJson.home.poss.split(':');
     gameJson.home.poss = (parseInt(homePoss[0], 10) * 60) + parseInt(homePoss[1], 10);
     gameJson.gameLength = gameJson.away.poss + gameJson.home.poss;
+
+    // Convert numbers. DRY.
+    ['home', 'away'].forEach((teamString) => {
+      const team = gameJson[teamString];
+      Object.keys(team).forEach((key) => {
+        if (key !== 'name') {
+          team[key] = parseInt(team[key], 10);
+        }
+      });
+    });
   } else {
     console.error(`No regex match for ${data.id}.`);
   }
-
-  gameJson.week = 1;
 
   return gameJson;
 };

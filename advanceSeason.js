@@ -2,8 +2,7 @@
  * Advance to the next season and regress all Elo scores.
  */
 
-const fs = require('fs');
-const oldElo = require('./elo.json');
+const oldElo = require('./output/elo.json');
 const calcRange = require('./utils/calcRange');
 const writeJson = require('./utils/writeJson');
 

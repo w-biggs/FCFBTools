@@ -1,4 +1,4 @@
-const elo = require('../elo.json');
+const elo = require('../output/elo.json');
 const writeJson = require('./writeJson');
 
 const getTeam = function getTeamFromEloJson(name) {
@@ -34,9 +34,23 @@ const sortElo = function sortEloByElo(a, b) {
   return 0;
 };
 
-module.exports = function writeElo(homeName, awayName, eloValues) {
+const writeElo = function writeSingleGameElo(homeName, awayName, eloValues) {
   writeSingleElo(homeName, eloValues.homeValues);
   writeSingleElo(awayName, eloValues.awayValues);
   elo.teams.sort(sortElo);
   writeJson(elo, 'elo.json');
+};
+
+const writeElos = function writeMultipleGameElos(games) {
+  games.forEach((game) => {
+    writeSingleElo(game.homeName, game.eloValues.homeValues);
+    writeSingleElo(game.awayName, game.eloValues.awayValues);
+  });
+  elo.teams.sort(sortElo);
+  writeJson(elo, 'elo.json');
+};
+
+module.exports = {
+  writeElo,
+  writeElos,
 };

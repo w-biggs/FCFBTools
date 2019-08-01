@@ -1,5 +1,5 @@
 const mathjs = require('mathjs');
-const elo = require('../elo.json');
+const elo = require('../output/elo.json');
 
 /* Vegas line divisor - (Elo - Opp Elo / x). */
 const vegasDivisor = 18.14010981807;
@@ -54,8 +54,24 @@ const calcEloChange = function calculateEloChange(
   return expDeweight * movMultiplier * kval * diffFromExpected;
 };
 
+const getLatest = function getMaxObjectInArray(array, key) {
+  let maxVal = -1;
+  let maxObj = {};
+  array.forEach((item) => {
+    if (item[key] > maxVal) {
+      maxVal = item[key];
+      maxObj = item;
+    }
+  });
+  return maxObj;
+};
+
 const getElo = function getEloFromEloJson(name) {
-  return elo.teams.filter(team => team.name === name)[0].elo;
+  const team = elo.teams.filter(eloTeam => eloTeam.name === name)[0];
+  const season = getLatest(team.seasons, 'seasonNo');
+  const week = getLatest(season.weeks, 'weekNo');
+
+  return week.elo;
 };
 
 module.exports = function calcElo(game) {
@@ -114,6 +130,7 @@ module.exports = function calcElo(game) {
       score: homeScore,
       oppScore: awayScore,
       oppName: game.away.name,
+      id: game.id,
     },
   };
   
@@ -132,6 +149,7 @@ module.exports = function calcElo(game) {
       score: awayScore,
       oppScore: homeScore,
       oppName: game.home.name,
+      id: game.id,
     },
   };
 
