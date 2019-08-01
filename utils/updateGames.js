@@ -30,7 +30,7 @@ const updateWeek = function updateWeek(seasonNo, weekNo, parsedGames, gamesJson)
       for (let j = 0; j < season.weeks.length; j += 1) {
         const week = season.weeks[j];
         if (week.weekNo === weekNo) {
-          week.concat(parsedGames);
+          week.games = week.games.concat(parsedGames);
           return newGames;
         }
       }
@@ -55,12 +55,26 @@ const updateWeek = function updateWeek(seasonNo, weekNo, parsedGames, gamesJson)
   return newGames;
 };
 
+/**
+ * Writes the IDs and number of new games to the log.
+ * @param {Object<string,number|string|object>[]} parsedGames
+ *  - An array of the games that we're adding to games.json.
+ */
+const logWrittenGames = function logWhatGamesWeAreWriting(parsedGames) {
+  const ids = [];
+  parsedGames.forEach((game) => {
+    ids.push(game.id);
+  });
+
+  console.log(`Writing ${parsedGames.length} games: ${ids.join(', ')}.`);
+};
+
 module.exports = (seasonNo, weekNo, gameIDs) => new Promise((resolve, reject) => {
   fetchJsons(gameIDs)
     .then((responses) => {
       const parsedGames = responses.map(response => parseGame(response.json))
         .filter(parsedGame => parsedGame);
-      console.log(parsedGames.length);
+      logWrittenGames(parsedGames);
       try {
         const newGames = updateWeek(seasonNo, weekNo, parsedGames, games);
 

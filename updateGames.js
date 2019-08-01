@@ -11,8 +11,6 @@ const week = season.weeks[season.weeks.length - 1];
 
 const newGames = checkGames(season.seasonNo, week.weekNo, week.games);
 
-console.log(`Writing games: ${newGames.join(', ')}`);
-
 try {
   updateGames(season.seasonNo, week.weekNo, newGames)
     .then((response) => {

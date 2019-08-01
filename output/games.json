@@ -27616,6 +27616,88 @@
                 "q4": 10,
                 "score": 34
               }
+            },
+            {
+              "week": 1,
+              "id": "ch9awn",
+              "gameLength": 1680,
+              "startTime_utc": 1563980550,
+              "endTime_utc": 1564673210,
+              "away": {
+                "name": "Presbyterian",
+                "passYds": 144,
+                "rushYds": 163,
+                "yds": 307,
+                "ints": 0,
+                "fumbles": 1,
+                "fgm": 1,
+                "fga": 1,
+                "poss": 775,
+                "timeouts": 3,
+                "q1": 14,
+                "q2": 0,
+                "q3": 7,
+                "q4": 3,
+                "score": 24
+              },
+              "home": {
+                "name": "Western Illinois",
+                "passYds": 223,
+                "rushYds": 119,
+                "yds": 342,
+                "ints": 0,
+                "fumbles": 1,
+                "fgm": 1,
+                "fga": 1,
+                "poss": 905,
+                "timeouts": 3,
+                "q1": 7,
+                "q2": 17,
+                "q3": 14,
+                "q4": 6,
+                "score": 44
+              }
+            },
+            {
+              "week": 1,
+              "id": "ch94w8",
+              "gameLength": 1680,
+              "startTime_utc": 1563979743,
+              "endTime_utc": 1564628614,
+              "away": {
+                "name": "Lafayette",
+                "passYds": 129,
+                "rushYds": 155,
+                "yds": 284,
+                "ints": 0,
+                "fumbles": 2,
+                "fgm": 1,
+                "fga": 2,
+                "poss": 906,
+                "timeouts": 3,
+                "q1": 0,
+                "q2": 17,
+                "q3": 7,
+                "q4": 0,
+                "score": 24
+              },
+              "home": {
+                "name": "Fordham",
+                "passYds": 53,
+                "rushYds": 266,
+                "yds": 319,
+                "ints": 0,
+                "fumbles": 0,
+                "fgm": 0,
+                "fga": 1,
+                "poss": 774,
+                "timeouts": 3,
+                "q1": 7,
+                "q2": 0,
+                "q3": 7,
+                "q4": 7,
+                "score": 21
+              }
             }
           ]
         }
