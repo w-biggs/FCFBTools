@@ -3,10 +3,14 @@ const calcElo = require('./utils/calcElo');
 const { writeElos } = require('./utils/writeElo');
 const games = require('./output/games.json');
 
-let [seasonNo, weekNo] = process.argv.slice(2);
+const args = process.argv.slice(2);
 
-seasonNo = parseInt(seasonNo, 10);
-weekNo = parseInt(weekNo, 10);
+if (args.length !== 2) {
+  console.log(`Requires two arguments - season and week numbers. ${args.length} arguments were given.`);
+  process.exit(1);
+}
+
+const [seasonNo, weekNo] = args.map(arg => parseInt(arg, 10));
 
 const eloGames = [];
 
