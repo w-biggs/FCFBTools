@@ -4,6 +4,12 @@
   "main": "index.js",
   "author": "W Biggs <wilson@wilsonbiggs.com>",
   "license": "MIT",
+  "scripts": {
+    "games": "node updateGames.js",
+    "elo": "node updateElo.js",
+    "elo-copy": "cp ./output/elo.json ../1212/src/static/js/elo.json",
+    "reset": "node resetElo.js"
+  },
   "dependencies": {
     "mathjs": "^6.0.3"
   }
