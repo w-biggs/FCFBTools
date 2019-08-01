@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "games": "node updateGames.js",
+    "games-copy": "cp ./output/games.json ../1212/src/static/js/games.json",
     "elo": "node updateElo.js",
     "elo-copy": "cp ./output/elo.json ../1212/src/static/js/elo.json",
     "reset": "node resetElo.js"
