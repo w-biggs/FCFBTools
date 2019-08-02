@@ -13,7 +13,7 @@ module.exports = function parseGame(rawJson) {
 
   /* json for the parsed game */
   const gameJson = {
-    week: 1,
+    week: 1, // TODO: MAGIC NUMBER FIX!
     id: data.id,
     gameLength: 0,
     startTime_utc: data.created_utc,
