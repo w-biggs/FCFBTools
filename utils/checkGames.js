@@ -17,14 +17,16 @@ const checkGame = function checkIfGameIsInJSON(seasonNo, weekNo, gameID) {
     if (season.seasonNo === seasonNo) {
       for (let j = 0; j < season.weeks.length; j += 1) {
         const week = season.weeks[j];
-        for (let k = 0; k < week.games.length; k += 1) {
-          const game = week.games[k];
-          if (game.id === gameID) {
-            return false;
+        if (week.weekNo === weekNo) {
+          for (let k = 0; k < week.games.length; k += 1) {
+            const game = week.games[k];
+            if (game.id === gameID) {
+              return false;
+            }
           }
+          console.log(`${gameID} not present in S${seasonNo} W${weekNo}.`);
+          return true;
         }
-        console.log(`${gameID} not present in S${seasonNo} W${weekNo}.`);
-        return true;
       }
       return new Error(`Week ${weekNo} not found in Season ${seasonNo}.`);
     }
