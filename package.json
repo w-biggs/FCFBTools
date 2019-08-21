@@ -9,7 +9,9 @@
     "games-copy": "cp ./output/games.json ../1212/src/static/js/games.json",
     "elo": "node updateElo.js",
     "elo-copy": "cp ./output/elo.json ../1212/src/static/js/elo.json",
-    "copy": "yarn games-copy && yarn elo-copy",
+    "pn": "node updatePN.js",
+    "pn-copy": "cp ./output/pn.json ../1212/src/static/js/pn.json",
+    "copy": "yarn games-copy && yarn elo-copy && yarn pn-copy",
     "reset": "node resetElo.js"
   },
   "dependencies": {
