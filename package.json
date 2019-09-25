@@ -11,7 +11,8 @@
     "elo-copy": "cp ./output/elo.json ../1212/src/static/js/elo.json",
     "pn": "node updatePN.js",
     "pn-copy": "cp ./output/pn.json ../1212/src/static/js/pn.json",
-    "copy": "yarn games-copy && yarn elo-copy && yarn pn-copy",
+    "id-copy": "cp ./config/gameIDs.json ../1212/src/server/gameIDs.json",
+    "copy": "yarn games-copy && yarn elo-copy && yarn pn-copy && yarn id-copy",
     "reset": "node resetElo.js"
   },
   "dependencies": {
