@@ -1,0 +1,514 @@
+[
+  {
+    "team": "Montana State",
+    "eqw": 3.86086536017614
+  },
+  {
+    "team": "Villanova",
+    "eqw": 3.460588634601051
+  },
+  {
+    "team": "Dixie State",
+    "eqw": 3.405512352177938
+  },
+  {
+    "team": "Penn",
+    "eqw": 3.329611860471032
+  },
+  {
+    "team": "Lehigh",
+    "eqw": 3.292513626124827
+  },
+  {
+    "team": "Incarnate Word",
+    "eqw": 3.228567593998372
+  },
+  {
+    "team": "Marist",
+    "eqw": 2.8480302356735674
+  },
+  {
+    "team": "Jackson State",
+    "eqw": 2.729597830745959
+  },
+  {
+    "team": "Stony Brook",
+    "eqw": 2.6546852066634887
+  },
+  {
+    "team": "Cal Poly",
+    "eqw": 2.632405366738327
+  },
+  {
+    "team": "Delaware State",
+    "eqw": 2.501751893614036
+  },
+  {
+    "team": "Maine",
+    "eqw": 2.480945175329764
+  },
+  {
+    "team": "Jacksonville State",
+    "eqw": 2.4031984146032004
+  },
+  {
+    "team": "Bethune-Cookman",
+    "eqw": 2.388043293366797
+  },
+  {
+    "team": "Monmouth",
+    "eqw": 2.199555482067387
+  },
+  {
+    "team": "Southern Utah",
+    "eqw": 2.108059635974909
+  },
+  {
+    "team": "Mississippi Valley State",
+    "eqw": 2.091331603395816
+  },
+  {
+    "team": "Northern Iowa",
+    "eqw": 2.029389167503397
+  },
+  {
+    "team": "VMI",
+    "eqw": 2.0194641776226994
+  },
+  {
+    "team": "Indiana State",
+    "eqw": 1.9391371559450448
+  },
+  {
+    "team": "Long Island",
+    "eqw": 1.907645175529658
+  },
+  {
+    "team": "Southern Illinois",
+    "eqw": 1.8939082540981258
+  },
+  {
+    "team": "San Diego",
+    "eqw": 1.8900425108079442
+  },
+  {
+    "team": "Dayton",
+    "eqw": 1.8507274951570467
+  },
+  {
+    "team": "Drake",
+    "eqw": 1.7049495946822002
+  },
+  {
+    "team": "Prairie View A&M",
+    "eqw": 1.6954110446619888
+  },
+  {
+    "team": "Florida A&M",
+    "eqw": 1.6271538438105115
+  },
+  {
+    "team": "Alabama A&M",
+    "eqw": 1.521221522807366
+  },
+  {
+    "team": "Davidson",
+    "eqw": 1.4576850669501893
+  },
+  {
+    "team": "Murray State",
+    "eqw": 1.3679265426134757
+  },
+  {
+    "team": "Austin Peay",
+    "eqw": 1.3623788931168612
+  },
+  {
+    "team": "Mercer",
+    "eqw": 1.3206156961838627
+  },
+  {
+    "team": "Lamar",
+    "eqw": 1.30521305177539
+  },
+  {
+    "team": "Texas Southern",
+    "eqw": 1.2454660855737727
+  },
+  {
+    "team": "South Dakota State",
+    "eqw": 1.1815204678711564
+  },
+  {
+    "team": "Southeast Missouri",
+    "eqw": 1.1093341035611526
+  },
+  {
+    "team": "Colgate",
+    "eqw": 1.0511162960069378
+  },
+  {
+    "team": "Charleston Southern",
+    "eqw": 0.9779173229607453
+  },
+  {
+    "team": "Southeastern Louisiana",
+    "eqw": 0.9548186017487448
+  },
+  {
+    "team": "Missouri State",
+    "eqw": 0.9501575361428122
+  },
+  {
+    "team": "Kennesaw State",
+    "eqw": 0.9221716770512554
+  },
+  {
+    "team": "Nicholls State",
+    "eqw": 0.9127615083511869
+  },
+  {
+    "team": "Wagner",
+    "eqw": 0.8635861110358725
+  },
+  {
+    "team": "Abilene Christian",
+    "eqw": 0.8604177530260776
+  },
+  {
+    "team": "Youngstown State",
+    "eqw": 0.7005375743272519
+  },
+  {
+    "team": "Northern Colorado",
+    "eqw": 0.6609242601555269
+  },
+  {
+    "team": "Furman",
+    "eqw": 0.6426871425093073
+  },
+  {
+    "team": "Robert Morris",
+    "eqw": 0.6188451612509178
+  },
+  {
+    "team": "Western Illinois",
+    "eqw": 0.5784334997725752
+  },
+  {
+    "team": "Yale",
+    "eqw": 0.5743939973358321
+  },
+  {
+    "team": "Dartmouth",
+    "eqw": 0.5461257719687624
+  },
+  {
+    "team": "Harvard",
+    "eqw": 0.4824197261775542
+  },
+  {
+    "team": "Eastern Illinois",
+    "eqw": 0.4123119498007046
+  },
+  {
+    "team": "St. Francis",
+    "eqw": 0.4045079815523799
+  },
+  {
+    "team": "North Carolina Central",
+    "eqw": 0.35862556025625836
+  },
+  {
+    "team": "Samford",
+    "eqw": 0.34116385260686255
+  },
+  {
+    "team": "Campbell",
+    "eqw": 0.3404163642374137
+  },
+  {
+    "team": "Butler",
+    "eqw": 0.24014524325491676
+  },
+  {
+    "team": "Northwestern State",
+    "eqw": 0.17258032960687564
+  },
+  {
+    "team": "Portland State",
+    "eqw": 0.08551168867476586
+  },
+  {
+    "team": "Columbia",
+    "eqw": 0.07593746660655706
+  },
+  {
+    "team": "Houston Baptist",
+    "eqw": 0.0010365894385935906
+  },
+  {
+    "team": "Holy Cross",
+    "eqw": -0.030338720327258557
+  },
+  {
+    "team": "Valparaiso",
+    "eqw": -0.04371271915080462
+  },
+  {
+    "team": "North Alabama",
+    "eqw": -0.07905705904920159
+  },
+  {
+    "team": "Sam Houston State",
+    "eqw": -0.1456967832902938
+  },
+  {
+    "team": "Tennessee Tech",
+    "eqw": -0.16047018426924936
+  },
+  {
+    "team": "Stephen F. Austin",
+    "eqw": -0.22992401656140682
+  },
+  {
+    "team": "Towson",
+    "eqw": -0.24374804086044957
+  },
+  {
+    "team": "Presbyterian",
+    "eqw": -0.43079736113608674
+  },
+  {
+    "team": "Rhode Island",
+    "eqw": -0.43390173224063194
+  },
+  {
+    "team": "Tennessee State",
+    "eqw": -0.45622688884484397
+  },
+  {
+    "team": "Gardner-Webb",
+    "eqw": -0.4848473983174378
+  },
+  {
+    "team": "Montana",
+    "eqw": -0.49144367294210567
+  },
+  {
+    "team": "UC Davis",
+    "eqw": -0.5067604584452685
+  },
+  {
+    "team": "Morehead State",
+    "eqw": -0.5725405700839704
+  },
+  {
+    "team": "Arkansas-Pine Bluff",
+    "eqw": -0.5782465946770756
+  },
+  {
+    "team": "Merrimack",
+    "eqw": -0.6770551793753862
+  },
+  {
+    "team": "Grambling State",
+    "eqw": -0.7273742486891841
+  },
+  {
+    "team": "Delaware",
+    "eqw": -0.7967104355336242
+  },
+  {
+    "team": "Stetson",
+    "eqw": -0.8360074580964765
+  },
+  {
+    "team": "Duquesne",
+    "eqw": -0.8944498281704308
+  },
+  {
+    "team": "Brown",
+    "eqw": -0.9207058293353647
+  },
+  {
+    "team": "Sacramento State",
+    "eqw": -0.9229160050814775
+  },
+  {
+    "team": "North Dakota",
+    "eqw": -0.9753755890963507
+  },
+  {
+    "team": "McNeese State",
+    "eqw": -0.9936896029174763
+  },
+  {
+    "team": "The Citadel",
+    "eqw": -0.9989090724155198
+  },
+  {
+    "team": "Sacred Heart",
+    "eqw": -1.0205550330503335
+  },
+  {
+    "team": "Cornell",
+    "eqw": -1.0407634591090282
+  },
+  {
+    "team": "Princeton",
+    "eqw": -1.0441552719824818
+  },
+  {
+    "team": "Eastern Washington",
+    "eqw": -1.1242049317325873
+  },
+  {
+    "team": "Bryant",
+    "eqw": -1.1947018945555457
+  },
+  {
+    "team": "Fordham",
+    "eqw": -1.1962650866004563
+  },
+  {
+    "team": "Bucknell",
+    "eqw": -1.29033624645664
+  },
+  {
+    "team": "Hampton",
+    "eqw": -1.3154881433089898
+  },
+  {
+    "team": "Morgan State",
+    "eqw": -1.345552720812762
+  },
+  {
+    "team": "Chattanooga",
+    "eqw": -1.3801933755608953
+  },
+  {
+    "team": "South Carolina State",
+    "eqw": -1.4953784172447653
+  },
+  {
+    "team": "Weber State",
+    "eqw": -1.521893101597807
+  },
+  {
+    "team": "Howard",
+    "eqw": -1.5714123284481334
+  },
+  {
+    "team": "Idaho State",
+    "eqw": -1.6063147549729444
+  },
+  {
+    "team": "Wofford",
+    "eqw": -1.6188352113878572
+  },
+  {
+    "team": "Illinois State",
+    "eqw": -1.6269327915701564
+  },
+  {
+    "team": "Richmond",
+    "eqw": -1.8484129290857325
+  },
+  {
+    "team": "Alabama State",
+    "eqw": -1.9441329982300668
+  },
+  {
+    "team": "Savannah State",
+    "eqw": -1.9660593811737481
+  },
+  {
+    "team": "Northern Arizona",
+    "eqw": -2.072123935644421
+  },
+  {
+    "team": "Western Carolina",
+    "eqw": -2.082822880644337
+  },
+  {
+    "team": "James Madison",
+    "eqw": -2.087419511100013
+  },
+  {
+    "team": "UT Martin",
+    "eqw": -2.09297682666171
+  },
+  {
+    "team": "Jacksonville",
+    "eqw": -2.15385891940542
+  },
+  {
+    "team": "Albany",
+    "eqw": -2.1627594808665602
+  },
+  {
+    "team": "Lafayette",
+    "eqw": -2.2554074264466397
+  },
+  {
+    "team": "North Dakota State",
+    "eqw": -2.287175552061815
+  },
+  {
+    "team": "North Carolina A&T",
+    "eqw": -2.3376773184192485
+  },
+  {
+    "team": "Eastern Kentucky",
+    "eqw": -2.479985342819621
+  },
+  {
+    "team": "South Dakota",
+    "eqw": -2.5403914492642485
+  },
+  {
+    "team": "Alcorn State",
+    "eqw": -2.6122272210316924
+  },
+  {
+    "team": "William & Mary",
+    "eqw": -2.6847496130962787
+  },
+  {
+    "team": "Idaho",
+    "eqw": -2.792229735344214
+  },
+  {
+    "team": "Central Arkansas",
+    "eqw": -3.0452162122269737
+  },
+  {
+    "team": "Southern",
+    "eqw": -3.0887481354045017
+  },
+  {
+    "team": "East Tennessee State",
+    "eqw": -3.1064439104390775
+  },
+  {
+    "team": "Elon",
+    "eqw": -3.2524917684764065
+  },
+  {
+    "team": "Georgetown",
+    "eqw": -3.5094700225591615
+  },
+  {
+    "team": "New Hampshire",
+    "eqw": -3.7055299270563973
+  },
+  {
+    "team": "Central Connecticut",
+    "eqw": -3.7570873045562956
+  },
+  {
+    "team": "Norfolk State",
+    "eqw": -4.169965102243317
+  }
+]

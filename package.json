@@ -10,9 +10,11 @@
     "elo": "node updateElo.js",
     "elo-copy": "cp ./output/elo.json ../1212/src/static/js/elo.json",
     "pn": "node updatePN.js",
-    "pn-copy": "cp ./output/pn.json ../1212/src/static/js/pn.json",
+    "pn-copy": "cp ./output/pn.json ../1212/src/static/js/pn.json && cp ./output/wpn.json ../1212/src/static/js/wpn.json",
     "id-copy": "cp ./config/gameIDs.json ../1212/src/server/gameIDs.json",
-    "copy": "yarn games-copy && yarn elo-copy && yarn pn-copy && yarn id-copy",
+    "stats": "node updateStats.js",
+    "stats-copy": "cp ./output/stats.json ../1212/src/static/js/stats.json",
+    "copy": "yarn games-copy && yarn elo-copy && yarn pn-copy && yarn id-copy && yarn stats-copy",
     "reset": "node resetElo.js"
   },
   "dependencies": {

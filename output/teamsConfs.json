@@ -1,0 +1,277 @@
+{
+  "confs": [
+    {
+      "name": "Atlantic Sun",
+      "divs": [
+        {
+          "name": "North",
+          "teams": [
+            "Jacksonville State",
+            "Alabama A&M",
+            "Samford",
+            "Campbell",
+            "Savannah State",
+            "Chattanooga",
+            "East Tennessee State"
+          ]
+        },
+        {
+          "name": "South",
+          "teams": [
+            "Bethune-Cookman",
+            "Stetson",
+            "Florida A&M",
+            "Mercer",
+            "Jacksonville",
+            "Kennesaw State",
+            "Alabama State"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "America East",
+      "divs": [
+        {
+          "name": "Tri-State",
+          "teams": [
+            "Stony Brook",
+            "Long Island",
+            "Sacred Heart",
+            "Fordham",
+            "Albany",
+            "Central Connecticut"
+          ]
+        },
+        {
+          "name": "New England",
+          "teams": [
+            "Maine",
+            "Bryant",
+            "Holy Cross",
+            "Rhode Island",
+            "Merrimack",
+            "New Hampshire"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ivy League",
+      "divs": [
+        {
+          "name": "N/A",
+          "teams": [
+            "Penn",
+            "Yale",
+            "Princeton",
+            "Columbia",
+            "Dartmouth",
+            "Harvard",
+            "Brown",
+            "Cornell"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Big Sky",
+      "divs": [
+        {
+          "name": "North",
+          "teams": [
+            "Montana State",
+            "Weber State",
+            "Montana",
+            "Portland State",
+            "Eastern Washington",
+            "Idaho State",
+            "Idaho"
+          ]
+        },
+        {
+          "name": "South",
+          "teams": [
+            "Cal Poly",
+            "Southern Utah",
+            "UC Davis",
+            "Dixie State",
+            "San Diego",
+            "Sacramento State",
+            "Northern Arizona"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Missouri Valley Conference",
+      "divs": [
+        {
+          "name": "Metro",
+          "teams": [
+            "Dayton",
+            "Butler",
+            "Western Illinois",
+            "Indiana State",
+            "Valparaiso",
+            "Illinois State",
+            "Eastern Illinois"
+          ]
+        },
+        {
+          "name": "Prairie",
+          "teams": [
+            "Northern Iowa",
+            "Drake",
+            "South Dakota State",
+            "Northern Colorado",
+            "North Dakota State",
+            "North Dakota",
+            "South Dakota"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Colonial",
+      "divs": [
+        {
+          "name": "North",
+          "teams": [
+            "Villanova",
+            "Towson",
+            "Robert Morris",
+            "Duquesne",
+            "Youngstown State",
+            "Morgan State"
+          ]
+        },
+        {
+          "name": "South",
+          "teams": [
+            "Delaware State",
+            "VMI",
+            "James Madison",
+            "Delaware",
+            "William & Mary",
+            "Richmond"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Southland",
+      "divs": [
+        {
+          "name": "Texas",
+          "teams": [
+            "Incarnate Word",
+            "Sam Houston State",
+            "Texas Southern",
+            "Houston Baptist",
+            "Prairie View A&M",
+            "Abilene Christian",
+            "Stephen F. Austin"
+          ]
+        },
+        {
+          "name": "Louisiana",
+          "teams": [
+            "McNeese State",
+            "Grambling State",
+            "Lamar",
+            "Nicholls State",
+            "Northwestern State",
+            "Southeastern Louisiana",
+            "Southern"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mid-Atlantic",
+      "divs": [
+        {
+          "name": "Adirondack",
+          "teams": [
+            "St. Francis",
+            "Marist",
+            "Lehigh",
+            "Lafayette",
+            "Colgate",
+            "Bucknell"
+          ]
+        },
+        {
+          "name": "Atlantic",
+          "teams": [
+            "Wagner",
+            "Monmouth",
+            "Howard",
+            "Hampton",
+            "Norfolk State",
+            "Georgetown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Carolina Football Conference",
+      "divs": [
+        {
+          "name": "North",
+          "teams": [
+            "Gardner-Webb",
+            "North Carolina Central",
+            "North Carolina A&T",
+            "Davidson",
+            "Elon",
+            "Western Carolina"
+          ]
+        },
+        {
+          "name": "South",
+          "teams": [
+            "The Citadel",
+            "Charleston Southern",
+            "Presbyterian",
+            "Wofford",
+            "South Carolina State",
+            "Furman"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Delta Intercollegiate",
+      "divs": [
+        {
+          "name": "Mississippi Valley",
+          "teams": [
+            "Jackson State",
+            "Mississippi Valley State",
+            "Missouri State",
+            "Southeast Missouri",
+            "Southern Illinois",
+            "Central Arkansas",
+            "Alcorn State",
+            "Arkansas-Pine Bluff"
+          ]
+        },
+        {
+          "name": "Tennessee Valley",
+          "teams": [
+            "Tennessee State",
+            "Tennessee Tech",
+            "Austin Peay",
+            "Eastern Kentucky",
+            "Morehead State",
+            "North Alabama",
+            "Murray State",
+            "UT Martin"
+          ]
+        }
+      ]
+    }
+  ]
+}

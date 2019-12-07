@@ -13,7 +13,7 @@ module.exports = function parseGame(rawJson) {
 
   /* json for the parsed game */
   const gameJson = {
-    week: 5, // TODO: MAGIC NUMBER FIX!
+    week: 10, // TODO: MAGIC NUMBER FIX!
     id: data.id,
     gameLength: 0,
     startTime_utc: data.created_utc,
@@ -65,7 +65,7 @@ module.exports = function parseGame(rawJson) {
     gameJson.away.poss = (parseInt(awayPoss[0], 10) * 60) + parseInt(awayPoss[1], 10);
     const homePoss = gameJson.home.poss.split(':');
     gameJson.home.poss = (parseInt(homePoss[0], 10) * 60) + parseInt(homePoss[1], 10);
-    gameJson.gameLength = gameJson.away.poss + gameJson.home.poss;
+    gameJson.gameLength = Math.min(gameJson.away.poss + gameJson.home.poss, 1680);
 
     // Convert numbers. DRY.
     ['home', 'away'].forEach((teamString) => {
