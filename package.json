@@ -9,7 +9,7 @@
     "games-copy": "cp ./output/games.json ../1212/src/static/js/games.json",
     "elo": "node updateElo.js",
     "elo-copy": "cp ./output/elo.json ../1212/src/static/js/elo.json",
-    "pn": "node updatePN.js",
+    "pn": "node updateBothPN.js",
     "pn-copy": "cp ./output/pn.json ../1212/src/static/js/pn.json && cp ./output/wpn.json ../1212/src/static/js/wpn.json",
     "id-copy": "cp ./config/gameIDs.json ../1212/src/server/gameIDs.json",
     "stats": "node updateStats.js",
