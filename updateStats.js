@@ -182,7 +182,7 @@ const calcTeamStats = function calculateTeamStats(teamName, confName, divName) {
                 stats.streak_type = 1;
                 stats.streak = 1;
               }
-              if (!oocWeeks.includes(game.week)) {
+              if (!oocWeeks.includes(game.week) && game.week < 13) {
                 stats.conf_wins += 1;
                 stats.conf_pf += team.score;
                 stats.conf_pa += opp.score;
@@ -200,7 +200,7 @@ const calcTeamStats = function calculateTeamStats(teamName, confName, divName) {
                 stats.streak_type = -1;
                 stats.streak = 1;
               }
-              if (!oocWeeks.includes(game.week)) {
+              if (!oocWeeks.includes(game.week) && game.week < 13) {
                 stats.conf_losses += 1;
                 stats.conf_pf += team.score;
                 stats.conf_pa += opp.score;
@@ -218,7 +218,7 @@ const calcTeamStats = function calculateTeamStats(teamName, confName, divName) {
                 stats.streak_type = 0;
                 stats.streak = 1;
               }
-              if (!oocWeeks.includes(game.week)) {
+              if (!oocWeeks.includes(game.week) && game.week < 13) {
                 stats.conf_ties += 1;
                 stats.conf_pf += team.score;
                 stats.conf_pa += opp.score;

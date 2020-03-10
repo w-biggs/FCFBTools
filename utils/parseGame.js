@@ -13,13 +13,14 @@ module.exports = function parseGame(rawJson) {
 
   /* json for the parsed game */
   const gameJson = {
-    week: 10, // TODO: MAGIC NUMBER FIX!
+    week: 18, // TODO: MAGIC NUMBER FIX!
     id: data.id,
     gameLength: 0,
     startTime_utc: data.created_utc,
     endTime_utc: data.edited,
     away: {},
     home: {},
+    manuallyFixed: false,
   };
 
   const regex = /\*\*(.*?)\*\* @ .*?\*\*(.*?)\*\*[\s\S]*?:-:\n(.*?) yards\|(.*?) yards\|(.*?) yards\|(.*?)\|(.*?)\|(.*?)\/(.*?)\|(.*?)\|(.*?)\n[\s\S]*?:-:\n(.*?) yards\|(.*?) yards\|(.*?)yards\|(.*?)\|(.*?)\|(.*?)\/(.*?)\|(.*?)\|(.*?)\n[\s\S]*?:-:\n.*?\|(.*?)\|(.*?)\|(.*?)\|(.*?)\|\*\*(.*?)\*\*\n.*?\|(.*?)\|(.*?)\|(.*?)\|(.*?)\|\*\*(.*?)\*\*\n/gm;

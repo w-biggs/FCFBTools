@@ -7,9 +7,9 @@ games.seasons.forEach((season) => {
   season.weeks.forEach((week) => {
     week.games.forEach((game) => {
       if (game.home.score > game.away.score) {
-        csv.push(`${game.home.score}, ${game.away.score}`);
+        csv.push(`${game.home.name} def. ${game.away.name} - S${season.seasonNo}W${week.weekNo}, ${game.home.score}, ${game.away.score}`);
       } else {
-        csv.push(`${game.away.score}, ${game.home.score}`);
+        csv.push(`${game.away.name} def. ${game.home.name} - S${season.seasonNo}W${week.weekNo}, ${game.away.score}, ${game.home.score}`);
       }
     });
   });
